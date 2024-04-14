@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align the text inside the container */
+}
+
+h1 {
+    font-size: 2rem; /* Size of the main headline */
+    color: #333; /* Dark grey color for the headline */
+    margin-bottom: 0.5rem; /* Spacing below the headline */
+}
+
+h2 {
+    font-size: 1.5rem; /* Smaller size for the subheading */
+    color: #666; /* Lighter grey color for the subheading */
+    margin-bottom: 2rem; /* More space below the subheading to separate from the form */
+}
+
+form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px #aaa;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+small {
+    display: none;
+    color: red;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container py-5">
+	<h1>Hello World ! Welcome</h1>
+        <h2>Please Register Yourself</h2>
+    <form id="registrationForm" onsubmit="return validateForm()" autocomplete="off">
+        <div>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" required onchange="validateFullName()">
+            <small>Error message</small>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required onchange="validateEmail()">
+            <small>Error message</small>
+        </div>
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required onchange="validatePhone()">
+            <small>Error message</small>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required onchange="validatePassword()">
+            <small>Error message</small>
+        </div>
+        <div>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required onchange="validateConfirmPassword()">
+            <small>Error message</small>
+        </div>
+        <button type="submit">Register</button>
+    		
+</form>
+	<div id="successMessage" style="display:none; color: green; text-align: center;">
+    		You have registered successfully.		
+	
+<form id="registrationForm" onsubmit="return validateForm()" autocomplete="off"> 
+<button id="addAnother" onclick="addAnotherUser()">Add another user</button>
+</form></div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
