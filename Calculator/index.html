@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanaya's Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS for styling and responsiveness -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+     <!-- Calculator container with Bootstrap classes for centering and responsive padding -->
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-8 text-center">
+		<h1 class="calc title"> Tanaya's Calculator &#128077; &#128512; </h1>
+                <!-- Calculator card for display and buttons -->
+                <div class="card">
+                    <!-- Input display for showing entered values and results -->
+                    <input id="display" type="text" class="display form-control text-right mb-3" disabled>
+                    <!-- Button grid with Bootstrap row and column classes -->
+                    <div class="card-body">
+                        <!-- Row for AC and modulo buttons -->
+                        <div class="row no-gutters mb-1">
+                            <div class="col">
+                                <button onclick="clearDisplay()" class="btn btn-danger btn-block">AC</button>
+                            </div>
+                            <div class="col">
+                                <button onclick="appendToDisplay('%')" class="btn btn-warning btn-block">%</button>
+                            </div>
+                            <div class="col">
+                                <button onclick="appendToDisplay('**2')" class="btn btn-secondary btn-block">x²</button>
+                            </div>
+                            <div class="col">
+                                <button onclick="appendToDisplay('/')" class="btn btn-info btn-block">/</button>
+                            </div>
+                        </div>
+                        <!-- Row for digits 7-9 and multiplication -->
+                        <div class="row no-gutters mb-1">
+                            <div class="col">
+                                <button onclick="appendToDisplay('7')" class="btn btn-light btn-block">7</button>
+                            </div>
+                            <div class="col">
+                                <button onclick="appendToDisplay('8')" class="btn btn-light btn-block">8</button>
+                            </div>
+                            <div class="col">
+                                <button onclick="appendToDisplay('9')" class="btn btn-light btn-block">9</button>
+                            </div>
+                            <div class="col">
+                                <button onclick="appendToDisplay('*')" class="btn btn-info btn-block">*</button>
+                            </div>
+                        </div>
+                        <!-- Row for digits 4-6 and subtraction -->
+                        <div class="row no-gutters mb-1">
+                            <div class="col">
+                                <button onclick="appendToDisplay('4')" class="btn btn-light btn-block">4</button>
+                            </div>
+                            <div class="col">
+                                <button onclick="appendToDisplay('5')" class="btn btn-light btn-block">5</button>
+                            </div>
+                            <div class="col">
+                                <button onclick="appendToDisplay('6')" class="btn btn-light btn-block">6</button>
+                            </div>
+                            <div class="col">
+                                <button onclick="appendToDisplay('-')" class="btn btn-info btn-block">-</button>
+                            </div>
+                        </div>
+                        <!-- Row for digits 1-3 and addition -->
+                        <div class="row no-gutters mb-1">
+                            <div class="col">
+                                <button onclick="appendToDisplay('1')" class="btn btn-light btn-block">1</button>
+                            </div>
+                            <div class="col">
+                                <button onclick="appendToDisplay('2')" class="btn btn-light btn-block">2</button>
+                            </div>
+                            <div class="col">
+                                <button onclick="appendToDisplay('3')" class="btn btn-light btn-block">3</button>
+                            </div>
+                            <div class="col">
+                                <button onclick="appendToDisplay('+')" class="btn btn-info btn-block">+</button>
+                            </div>
+                        </div>
+                        <!-- Row for digit 0, decimal, and equals -->
+                        <div class="row no-gutters">
+                            <div class="col-6">
+                                <button onclick="appendToDisplay('0')" class="btn btn-light btn-block">0</button>
+                            </div>
+                            <div class="col">
+                                <button onclick="appendToDisplay('.')" class="btn btn-light btn-block">.</button>
+                            </div>
+                            <div class="col">
+                                <button onclick="calculate()" class="btn btn-success btn-block">=</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Link to custom JavaScript logic for calculator -->
+    <script src="script.js"></script>
+</body>
+
+</html>

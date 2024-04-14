@@ -1,0 +1,119 @@
+/* Styles for the entire body to center the calculator */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: #ffffff; /* Consider a gentle background gradient here */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow for depth */
+}
+
+h1 {
+    color: #333;
+    font-weight: normal;
+}
+
+/* Styles for the calculator container */
+.calculator {
+    width: auto; /* Width of the calculator */
+    padding: 20px; /* Padding around the calculator */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for a 3D effect */
+    background: #fafafa; /* White background for the calculator */
+}
+
+/* Styles for the display of the calculator */
+.display {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    border-radius: 10px; /* More rounded corners for modern look */
+    box-shadow: inset 0 -1px 5px rgba(0, 0, 0, 0.2); /* Inner shadow for inset effect */
+    background: linear-gradient(to right, #ddd, #eee); /* Gradient effect */
+    color: #333;
+}
+
+/* Grid layout for buttons using Bootstrap's no-gutters class */
+  .row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+  .row.mb-1 {
+    margin-bottom: 0 !important; /* Increase the bottom margin, !important ensures override */
+}
+  
+  .col {
+    margin:0 0.4rem;
+}
+/* General button styles */
+.btn {
+    flex: 1;
+    padding: 15px; /* More padding for a bigger touch area */
+    margin: 5px; /* Space out the buttons a bit more */
+    font-size: 1.5em;
+    border-radius: 8px; /* Slightly less rounded than display for contrast */
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s; /* Animated press effect */
+    background: #f0f0f0; /* Neutral button color */
+    color: #333;
+}
+
+.btn:hover {
+    transform: scale(0.98); /* Slightly shrink buttons on hover */
+}
+
+/* Specific styles for operation buttons */
+.btn.operation {
+    background-color: #007bff; /* Blue background for operation buttons */
+    color: #fff; /* White text for better contrast */
+}
+
+/* Specific styles for number buttons */
+.btn.number {
+    background-color: #28a745; /* Green background for number buttons */
+    color: #fff; /* White text for better contrast */
+}
+
+/* Specific styles for the clear button */
+.btn.clear {
+    background-color: #dc3545; /* Red background for clear button */
+    color: #fff; /* White text for better contrast */
+}
+
+/* Specific styles for the equals button */
+.btn.equals {
+    background-color: #17a2b8; /* Light blue background for equals button */
+    color: #fff; /* White text for better contrast */
+}
+
+.btn.zero {
+    flex: 2; /* Keep the zero button wider */
+}
+
+/* Responsive button sizing using media queries */
+@media (max-width: 768px) {
+    .btn {
+        padding: 10px; /* Smaller padding for smaller screens */
+        font-size: 1.2em; /* Smaller font size for smaller screens */
+    }
+    .display {
+	font-size: 1.8em;
+    }
+}
+
+.calc-title{
+    margin-bottom: 1rem; /* Spacing below the title */
+    color: #333; /* Any color you want for the text */
+    /* Any other styles you want to apply to your title */
+}
